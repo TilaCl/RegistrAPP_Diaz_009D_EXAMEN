@@ -1,0 +1,16 @@
+{
+  "asistencia": [
+    {
+      "id": 1,
+      "datoAsis": "13/12/2022 12:34 PGY4121_005D",
+      "nombre": "Alex",
+      "Apellido": "Aguilera"
+    },
+    {
+      "id": 2,
+      "datoAsis": "13/12/2022 12:36 PGY4121_006D",
+      "nombre": "Antonio",
+      "apellido": "Rios"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="mostrarMenu()" color="dark">
+        <ion-icon slot="end" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Docente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    
+    <ion-card-header>
+      <ion-card-subtitle>RegistrApp</ion-card-subtitle>
+      <ion-card-title>Bienvenid@ {{Nombre}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img src="assets/docentes.png" class="ion-padding">
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button routerLink="/generar-qr" expand="block" fill="solid" shape="full">
+    Empezar asistencia QR
+  </ion-button>
+  
+  <!--
+  <ion-button routerLink="/alert">
+    Alert
+  </ion-button> 
+  <ion-button routerLink="/action-sheet">
+    Action Sheet
+  </ion-button>-->
+
+</ion-content>
+

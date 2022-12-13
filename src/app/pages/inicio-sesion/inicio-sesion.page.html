@@ -1,0 +1,48 @@
+
+
+<ion-content>
+
+  <ion-card>
+    <img src="../assets/logo duoc.png"  >
+  </ion-card>
+  <form [formGroup] = "formularioLogin">
+    <ion-item>
+      <ion-label>Iniciar como:</ion-label>
+      <ion-select placeholder="Selección" formControlName="tipo" mode="ios" type="text">
+        <ion-select-option required value="Estudiante">Alumno</ion-select-option>
+        <ion-select-option required value="Docente">Docente</ion-select-option>
+      </ion-select>
+    </ion-item>
+<!--------------------------------------------------------------------------------------------------------------------->
+    <ion-item>
+      <ion-label>Correo: </ion-label>
+      <ion-input type="email" placeholder="Email" position="floating"
+                 formControlName="correo"            
+                 pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+      </ion-input>
+    </ion-item>
+<!--------------------------------------------------------------------------------------------------------------------->
+    <ion-item>
+      <ion-label>Contraseña: </ion-label>
+      <ion-input type="password" placeholder="Contraseña" value="" formControlName="password">
+      </ion-input>
+    </ion-item>
+<!--------------------------------------------------------------------------------------------------------------------->
+    
+   
+    <ion-button (click)="Ingresar()" color="success" expand="block" fill="solid" shape="round">
+      Iniciar Sesión
+    </ion-button>
+    <ion-button class="boton2" color="warning" expand="block" fill="solid" shape="round" routerLink="/restablecer-password">
+      Restablecer Contraseña
+    </ion-button>
+    <br>
+    <ion-button routerLink="/registro-usuario" expand="block" fill="solid" color="light" >
+    Registrar Alumno
+   </ion-button>
+   <ion-button routerLink="/registro-docente" expand="block" fill="solid" color="light" >
+    Registrar Docente
+   </ion-button>
+  </form>
+  
+</ion-content>

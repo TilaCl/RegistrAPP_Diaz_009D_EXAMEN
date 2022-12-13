@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon slot="end" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Asistencias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Notas:</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Aqui están todos los estudiantes que escanearon el codigo QR.
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" class="col-class">Nombre</ion-col>
+        <ion-col size="6" class="col-class">Fecha y asignatura</ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+    <ion-item *ngFor="let a of asistencia">
+      <ion-col size="6">
+        {{a.nombre}} {{a.apellido}}
+      </ion-col>
+      <ion-col size="6">
+        {{a.datoAsis}}
+      </ion-col>
+      </ion-item>
+    </ion-grid>
+  </ion-list>
+
+</ion-content>

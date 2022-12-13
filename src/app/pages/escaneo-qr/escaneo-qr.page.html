@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon slot="start" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-icon class="icono" name="qr-code-outline"></ion-icon>
+    <ion-card>
+     
+      <ion-card-content>
+        Recuerda dar permiso de camara a la aplicación.
+      </ion-card-content>
+    </ion-card>
+  <ion-button class="boton" (click)="Escaneo()" expand="full" fill="clear" shape="round">
+    ESCANEAR
+  </ion-button>
+</ion-content>

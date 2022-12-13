@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon slot="start" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    
+    <ion-card-header>
+      <ion-card-subtitle>RegistrApp</ion-card-subtitle>
+      <ion-card-title>Bienvenid@ {{Nombre}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img src="assets/publicidad.png" class="ion-padding">
+      
+    </ion-card-content>
+  </ion-card>
+   
+      <ion-button expand="block" fill="solid" color="warning" routerLink="/escaneo-qr" >Escanear asistencia!</ion-button>
+
+
+  <!--
+  <ion-button routerLink="/alert">
+    Alert
+  </ion-button> 
+  <ion-button routerLink="/action-sheet">
+    Action Sheet
+  </ion-button>-->
+
+</ion-content>

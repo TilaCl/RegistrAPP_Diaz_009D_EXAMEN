@@ -1,0 +1,7 @@
+{
+    "/fl/*": {
+        "target": "https://apis.digital.gob.cl",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

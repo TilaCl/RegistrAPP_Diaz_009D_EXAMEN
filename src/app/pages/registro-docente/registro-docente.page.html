@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar class="encabezado">
+    <ion-buttons slot="start">
+      <ion-back-button 
+        defaultHref="/inicio-sesion"
+        text="Volver"
+        color="primary"
+        mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="white">Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo">
+  <ion-list-header>
+    <h1 style="margin-bottom:20px ;">Registro Docente</h1>
+  </ion-list-header>
+<form [formGroup] = "formularioRegistroDocente" (keyup.enter)="CrearDocente()">
+  <ion-item class="objeto">
+    <ion-label>Nombre: </ion-label>
+    <ion-input type="text" placeholder="Nombre" position="floating"
+               formControlName="nombre" minlength="3">
+    </ion-input>
+  </ion-item>
+<!------------------------------------------------------------------------------------------->  
+<ion-item class="objeto">
+  <ion-label>Apellido: </ion-label>
+  <ion-input type="text" placeholder="Apellido" position="floating"
+             formControlName="apellido" minlength="3">
+  </ion-input>
+</ion-item>
+<!------------------------------------------------------------------------------------------->  
+  <ion-item >
+    <ion-label>Email: </ion-label>
+    <ion-input type="text" placeholder="Email" position="floating"
+               formControlName="correo"
+               pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+    </ion-input>
+  </ion-item>
+<!------------------------------------------------------------------------------------------->
+  <ion-item>
+    <ion-label>Contraseña: </ion-label>
+    <ion-input type="password" placeholder="Contraseña" position="floating"
+               formControlName="password" minlength="6">
+    </ion-input>
+  </ion-item>
+<!------------------------------------------------------------------------------------------->
+<ion-item>
+  <ion-label>Repetir Contraseña: </ion-label>
+  <ion-input type="password" placeholder="Contraseña" position="floating"
+             formControlName="password2" minlength="6">
+  </ion-input>
+</ion-item>
+<!------------------------------------------------------------------------------------------->
+<ion-item>
+  <ion-label>Sexo:</ion-label>
+  <ion-select placeholder="Sexo" formControlName="sexo" mode="ios" position="floating">
+    <ion-select-option  value="Masculino">Masculino</ion-select-option>
+    <ion-select-option  value="Femenino">Femenino</ion-select-option>
+    <ion-select-option  value="Otro">Otro</ion-select-option>
+  </ion-select>
+</ion-item>
+<!------------------------------------------------------------------------------------------->
+<ion-item>
+  <ion-label>Especialidad: </ion-label>
+  <ion-input type="text" placeholder="Carrera" position="floating"
+             formControlName="facultad" minlength="3" >
+  </ion-input>
+</ion-item>
+<!------------------------------------------------------------------------------------------->
+<ion-item>
+  <ion-label>Sede: </ion-label>
+  <ion-input type="text" placeholder="Sede" position="floating"
+             formControlName="sede" minlength="3" >
+  </ion-input>
+</ion-item>
+<!------------------------------------------------------------------------------------------->
+<ion-item>
+  <ion-label>Titulo: </ion-label>
+  <ion-input type="text" placeholder="Sede" position="floating"
+             formControlName="titulo" minlength="3" >
+  </ion-input>
+</ion-item>
+<!------------------------------------------------------------------------------------------->
+<ion-button (click)="CrearDocente()" class="boton" 
+            expand="block" fill="outline" shape="round">
+      Registrar
+</ion-button>
+</form>
+
+</ion-content>

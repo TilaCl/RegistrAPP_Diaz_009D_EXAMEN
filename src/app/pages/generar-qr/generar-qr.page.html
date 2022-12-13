@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon slot="end" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Generar QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-icon class="icono" name="qr-code-outline" id="icon"></ion-icon>
+  <qrcode class="icono" [qrdata]="qrCodeString" id="qr" style="display: none;"  [width]="170" [errorCorrectionLevel]="'M'"></qrcode>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Notas:</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Recuerda que debes de proyectar el codigo QR generado mediante el proyector para que asi tus alumnos queden presente.
+    </ion-card-content>
+  </ion-card>
+  <form [formGroup] = "formularioSeccion">
+    <ion-item>
+      <ion-label>Asignaturas:</ion-label>
+      <ion-select placeholder="Selecciones:" formControlName="seccion" mode="ios" type="text">
+        <ion-select-option required value="PGY4121_005D">PGY4121_005D</ion-select-option>
+        <ion-select-option required value="PGY4121_006D">PGY4121_006D</ion-select-option>
+        <ion-select-option required value="PGY4121_007D">PGY4121_007D</ion-select-option>
+        <ion-select-option required value="PGY4121_008D">PGY4121_008D</ion-select-option>
+        <ion-select-option required value="PGY4121_009D">PGY4121_009D</ion-select-option>
+        <ion-select-option required value="PGY4121_0010D">PGY4121_0010D</ion-select-option>
+        <ion-select-option required value="PGY4121_0011D">PGY4121_0011D</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <br>
+    <ion-button (click)="Generar2()" expand="block" fill="outline" shape="round">
+      Generar QR
+    </ion-button>
+    </form>
+
+</ion-content>
