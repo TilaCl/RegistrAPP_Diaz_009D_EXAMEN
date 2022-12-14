@@ -7,11 +7,17 @@ Instalar chromium y chromedriver
 
 ionic serve --lab
 npm install @ionic/storage
+
 npm install @ionic/storage-angular
+
 npm install angularx-qrcode
+
 npm install @awesome-cordova-plugins/core
+
 npm install @awesome-cordova-plugins/barcode-scanner
+
 npm install phonegap-plugin-barcodescanner 
+
 npm install @ionic-native/barcode-scanner
 
 
