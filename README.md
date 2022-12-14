@@ -2,9 +2,8 @@ TESTEAR APLICACIÓN npm run e2e
 npm install -g protractor
 npm install jasmine
 Instalar chromium y chromedriver
-
-
-+ INSTALABLES
+ 
+  INSTALABLES
 
 ionic serve --lab
 npm install @ionic/storage
@@ -14,13 +13,9 @@ npm install @awesome-cordova-plugins/core
 npm install @awesome-cordova-plugins/barcode-scanner
 npm install phonegap-plugin-barcodescanner 
 npm install @ionic-native/barcode-scanner
-     _                      _                 ____ _     ___
-    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
-   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
-  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
- /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
-                |___/
 
+
+VERSIONES
 
 Angular CLI: 14.2.1
 Node: 18.12.1 (Unsupported)
@@ -43,8 +38,4 @@ Package                         Version
 rxjs                            6.6.7
 typescript                      4.7.4
 
-   _             _
-  (_) ___  _ __ (_) ___
-  | |/ _ \| '_ \| |/ __|
-  | | (_) | | | | | (__
-  |_|\___/|_| |_|_|\___| CLI 6.20.4
+IONIC  CLI 6.20.4
